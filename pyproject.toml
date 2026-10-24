@@ -1,0 +1,45 @@
+[project]
+name = "ml-design"
+version = "0.1.0"
+description = "Агентный harness для аудита безопасности репозиториев: дизайн ML-системы"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes
+    "I",      # isort: порядок импортов
+    "B",      # flake8-bugbear: типичные ошибки
+    "C4",     # flake8-comprehensions
+    "UP",     # pyupgrade: современный синтаксис
+    "SIM",    # flake8-simplify
+    "RUF",    # правила самого ruff
+    "S",      # flake8-bandit: безопасность
+]
+ignore = [
+    "E501",   # длину строк контролирует форматер
+    # RUF001-003 ищут латиницу, замаскированную под кириллицу. Документация и
+    # комментарии в проекте на русском, поэтому правило даёт ложные срабатывания
+    # на каждом слове.
+    "RUF001",
+    "RUF002",
+    "RUF003",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# В тестах допустимы assert и захардкоженные значения
+"tests/**" = ["S101"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
