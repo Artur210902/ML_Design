@@ -56,8 +56,8 @@ fig.savefig(out / "figures/source_length.png", dpi=150)
 plt.close(fig)
 summary = {
     "commit": subprocess.check_output(  # noqa: S603 - fixed arguments for local metadata
-        ["git", "-C", str(raw), "rev-parse", "HEAD"],
-        text=True,  # noqa: S607 - git resolved from user environment
+        ["git", "-C", str(raw), "rev-parse", "HEAD"],  # noqa: S607 - local git metadata
+        text=True,
     ).strip(),
     "csv_sha256": hashlib.sha256((raw / "expectedresults-1.2.csv").read_bytes()).hexdigest(),
     "cases": len(rows),
