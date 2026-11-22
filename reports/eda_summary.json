@@ -1,0 +1,21 @@
+{
+  "commit": "0119da404a3418bc337beb529b72ae755f018f97",
+  "csv_sha256": "f0311c850dea7f15125113f7cfdbd7ad612d7f5951c7331584f6981b6ae2d630",
+  "cases": 2740,
+  "labels": {
+    "true": 1415,
+    "false": 1325
+  },
+  "categories": 11,
+  "cwes": 11,
+  "missing_fields": 0,
+  "duplicate_ids": 0,
+  "missing_sources": [],
+  "exact_duplicate_excess": 0,
+  "normalized_duplicate_excess": 4,
+  "source_lines": {
+    "min": 51,
+    "median": 100,
+    "max": 206
+  }
+}
