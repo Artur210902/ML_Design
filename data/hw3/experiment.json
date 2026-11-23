@@ -1,0 +1,3390 @@
+{
+  "schema": 1,
+  "seeds": [
+    {
+      "id": "S01",
+      "file": "base/app/views_user.py",
+      "line": 16,
+      "cwe": 89
+    },
+    {
+      "id": "S02",
+      "file": "base/app/views_user.py",
+      "line": 29,
+      "cwe": 89
+    },
+    {
+      "id": "S03",
+      "file": "base/app/tasks.py",
+      "line": 13,
+      "cwe": 78
+    },
+    {
+      "id": "S04",
+      "file": "base/app/tasks.py",
+      "line": 25,
+      "cwe": 78
+    },
+    {
+      "id": "S05",
+      "file": "base/app/files.py",
+      "line": 14,
+      "cwe": 22
+    },
+    {
+      "id": "S06",
+      "file": "base/app/files.py",
+      "line": 25,
+      "cwe": 22
+    },
+    {
+      "id": "S07",
+      "file": "base/app/crypto_utils.py",
+      "line": 8,
+      "cwe": 327
+    },
+    {
+      "id": "S08",
+      "file": "base/app/crypto_utils.py",
+      "line": 27,
+      "cwe": 328
+    },
+    {
+      "id": "S09",
+      "file": "base/app/crypto_utils.py",
+      "line": 49,
+      "cwe": 330
+    },
+    {
+      "id": "S10",
+      "file": "base/app/settings_prod.py",
+      "line": 7,
+      "cwe": 798
+    },
+    {
+      "id": "S11",
+      "file": "base/app/settings_prod.py",
+      "line": 19,
+      "cwe": 798
+    },
+    {
+      "id": "S12",
+      "file": "base/app/serialization.py",
+      "line": 11,
+      "cwe": 502
+    },
+    {
+      "id": "S13",
+      "file": "base/app/serialization.py",
+      "line": 30,
+      "cwe": 502
+    },
+    {
+      "id": "S14",
+      "file": "base/app/calc.py",
+      "line": 12,
+      "cwe": 95
+    },
+    {
+      "id": "S15",
+      "file": "base/app/client.py",
+      "line": 11,
+      "cwe": 295
+    },
+    {
+      "id": "S16",
+      "file": "base/app/client.py",
+      "line": 26,
+      "cwe": 918
+    },
+    {
+      "id": "S17",
+      "file": "base/app/render.py",
+      "line": 8,
+      "cwe": 79
+    },
+    {
+      "id": "S18",
+      "file": "base/app/render.py",
+      "line": 18,
+      "cwe": 601
+    },
+    {
+      "id": "S19",
+      "file": "base/app/audit.py",
+      "line": 13,
+      "cwe": 532
+    },
+    {
+      "id": "S20",
+      "file": "base/app/views_admin.py",
+      "line": 22,
+      "cwe": 862
+    },
+    {
+      "id": "S21",
+      "file": "base/app/advanced.py",
+      "line": 25,
+      "cwe": 611
+    },
+    {
+      "id": "S22",
+      "file": "base/app/advanced.py",
+      "line": 47,
+      "cwe": 90
+    },
+    {
+      "id": "S23",
+      "file": "base/app/advanced.py",
+      "line": 62,
+      "cwe": 347
+    },
+    {
+      "id": "S24",
+      "file": "base/app/advanced.py",
+      "line": 77,
+      "cwe": 326
+    },
+    {
+      "id": "S25",
+      "file": "base/app/advanced.py",
+      "line": 91,
+      "cwe": 319
+    },
+    {
+      "id": "S26",
+      "file": "base/app/advanced.py",
+      "line": 106,
+      "cwe": 377
+    },
+    {
+      "id": "S27",
+      "file": "base/app/advanced.py",
+      "line": 123,
+      "cwe": 776
+    },
+    {
+      "id": "S28",
+      "file": "base/app/advanced.py",
+      "line": 138,
+      "cwe": 1333
+    },
+    {
+      "id": "S29",
+      "file": "base/app/advanced.py",
+      "line": 152,
+      "cwe": 78
+    },
+    {
+      "id": "S30",
+      "file": "base/app/web_flaws.py",
+      "line": 15,
+      "cwe": 384
+    },
+    {
+      "id": "S31",
+      "file": "base/app/web_flaws.py",
+      "line": 32,
+      "cwe": 918
+    },
+    {
+      "id": "S32",
+      "file": "base/app/web_flaws.py",
+      "line": 48,
+      "cwe": 89
+    },
+    {
+      "id": "S33",
+      "file": "base/app/web_flaws.py",
+      "line": 64,
+      "cwe": 22
+    },
+    {
+      "id": "S34",
+      "file": "base/app/web_flaws.py",
+      "line": 77,
+      "cwe": 798
+    },
+    {
+      "id": "S35",
+      "file": "base/app/web_flaws.py",
+      "line": 98,
+      "cwe": 116
+    },
+    {
+      "id": "S36",
+      "file": "base/app/web_flaws.py",
+      "line": 116,
+      "cwe": 732
+    }
+  ],
+  "runs": [
+    {
+      "run": 1,
+      "model": "gemini-3.5-flash-lite",
+      "records": [
+        {
+          "finding": {
+            "id": "2fcf017a3a06c6c9",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.use-defused-xml",
+            "file": "base/app/advanced.py",
+            "line_start": 15,
+            "line_end": 15,
+            "cwe": "CWE-611",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ad353704a3d00533",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.cryptography.security.insufficient-rsa-key-size",
+            "file": "base/app/advanced.py",
+            "line_start": 77,
+            "line_end": 77,
+            "cwe": "CWE-326",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "0d6d0800f84109ef",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.insecure-transport.requests.request-with-http",
+            "file": "base/app/advanced.py",
+            "line_start": 91,
+            "line_end": 92,
+            "cwe": "CWE-319",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "0cfa7eed3c70b722",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.dangerous-subprocess-use",
+            "file": "base/app/advanced.py",
+            "line_start": 152,
+            "line_end": 152,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "148ab8bd50019a68",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.subprocess-shell-true",
+            "file": "base/app/advanced.py",
+            "line_start": 152,
+            "line_end": 152,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d3b37059452d25e5",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/advanced.py",
+            "line_start": 155,
+            "line_end": 156,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "acc9fc88359103d6",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.logging.python-logger-credential-disclosure",
+            "file": "base/app/audit.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-532",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "198eb98af9123dde",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.code.user-eval",
+            "file": "base/app/calc.py",
+            "line_start": 11,
+            "line_end": 12,
+            "cwe": "CWE-95",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "3402bb4d3b417a90",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.eval-injection",
+            "file": "base/app/calc.py",
+            "line_start": 12,
+            "line_end": 12,
+            "cwe": "CWE-95",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "2bcd154641f82c1a",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.eval-detected",
+            "file": "base/app/calc.py",
+            "line_start": 12,
+            "line_end": 12,
+            "cwe": "CWE-95",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "6a157a6b27ace67a",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.requests.security.disabled-cert-validation",
+            "file": "base/app/client.py",
+            "line_start": 11,
+            "line_end": 11,
+            "cwe": "CWE-295",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "a37019a5c7ef364e",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.ssrf.ssrf-injection-requests",
+            "file": "base/app/client.py",
+            "line_start": 25,
+            "line_end": 26,
+            "cwe": "CWE-918",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ecf62fd54631e1c6",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.ssrf-requests",
+            "file": "base/app/client.py",
+            "line_start": 26,
+            "line_end": 26,
+            "cwe": "CWE-918",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "5775ebcdf32ba66b",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.insecure-hash-algorithm-md5",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-327",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "37d2248f84552c60",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.md5-used-as-password",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-327",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "eaae46033aa79488",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.insecure-hash-algorithm-sha1",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 27,
+            "line_end": 27,
+            "cwe": "CWE-327",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "6d6f475a883078bd",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.path-traversal.path-traversal-open",
+            "file": "base/app/files.py",
+            "line_start": 24,
+            "line_end": 29,
+            "cwe": "CWE-22",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "bee02ace1bcbd57b",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.raw-html-format",
+            "file": "base/app/render.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-79",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "83c314da569701e0",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.raw-html-format",
+            "file": "base/app/render.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-79",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "eb2e900b2b7a7cc9",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.audit.render-template-string",
+            "file": "base/app/render.py",
+            "line_start": 9,
+            "line_end": 9,
+            "cwe": "CWE-96",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d8c473f54ef8a13a",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.audit.render-template-string",
+            "file": "base/app/render.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-96",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "f72f056ebf1df4df",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.deserialization.avoid-pickle",
+            "file": "base/app/serialization.py",
+            "line_start": 11,
+            "line_end": 11,
+            "cwe": "CWE-502",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "3bf152fdbdba8103",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.deserialization.avoid-pickle",
+            "file": "base/app/serialization.py",
+            "line_start": 15,
+            "line_end": 15,
+            "cwe": "CWE-502",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ec4b546c2d5664f1",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.deserialization.avoid-pyyaml-load",
+            "file": "base/app/serialization.py",
+            "line_start": 30,
+            "line_end": 30,
+            "cwe": "CWE-502",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "a9f602081f7f80fd",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.command.command-injection-os-system",
+            "file": "base/app/tasks.py",
+            "line_start": 12,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "efa888bc45c972e8",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.os-system-injection",
+            "file": "base/app/tasks.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "3e92906efa1dee90",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.dangerous-system-call",
+            "file": "base/app/tasks.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "6ba90652ed790852",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.dangerous-subprocess-use",
+            "file": "base/app/tasks.py",
+            "line_start": 25,
+            "line_end": 25,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b8fa8ebd8cb471ff",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.subprocess-shell-true",
+            "file": "base/app/tasks.py",
+            "line_start": 25,
+            "line_end": 25,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b14f5cbee595b240",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.sql.sql-injection-db-cursor-execute",
+            "file": "base/app/views_user.py",
+            "line_start": 14,
+            "line_end": 17,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d863ab4b5b98cdb9",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.sqlalchemy.security.sqlalchemy-execute-raw-query",
+            "file": "base/app/views_user.py",
+            "line_start": 16,
+            "line_end": 17,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b91696c6ac2b7efe",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.tainted-sql-string",
+            "file": "base/app/views_user.py",
+            "line_start": 16,
+            "line_end": 16,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d7e82587cec6f6d5",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.tainted-sql-string",
+            "file": "base/app/views_user.py",
+            "line_start": 16,
+            "line_end": 16,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "40e640b133c9c413",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.formatted-sql-query",
+            "file": "base/app/views_user.py",
+            "line_start": 17,
+            "line_end": 17,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "780b344a9e923459",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.sqlalchemy.security.sqlalchemy-execute-raw-query",
+            "file": "base/app/views_user.py",
+            "line_start": 29,
+            "line_end": 30,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "565ddf53b5e74c45",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.tainted-sql-string",
+            "file": "base/app/views_user.py",
+            "line_start": 29,
+            "line_end": 29,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "9772d1874ad02b84",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.tainted-sql-string",
+            "file": "base/app/views_user.py",
+            "line_start": 29,
+            "line_end": 29,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ccd1e7cbed91f2d1",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 13,
+            "line_end": 16,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "a5cadfbc8a9ff49b",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 29,
+            "line_end": 32,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "86304771136d6c22",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.tainted-url-host",
+            "file": "base/app/web_flaws.py",
+            "line_start": 32,
+            "line_end": 32,
+            "cwe": "CWE-918",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "dbf0a0fbfbbb0990",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 45,
+            "line_end": 48,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "7fc6d99d69c54df5",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.sql.sql-injection-db-cursor-execute",
+            "file": "base/app/web_flaws.py",
+            "line_start": 46,
+            "line_end": 48,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "9f37e6ac5386b5b7",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.sqlalchemy.security.sqlalchemy-execute-raw-query",
+            "file": "base/app/web_flaws.py",
+            "line_start": 48,
+            "line_end": 48,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "cb554174b9254306",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.tainted-sql-string",
+            "file": "base/app/web_flaws.py",
+            "line_start": 48,
+            "line_end": 48,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b0ded321c8955347",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 95,
+            "line_end": 99,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "47604813987d0f59",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.insecure-file-permissions",
+            "file": "base/app/web_flaws.py",
+            "line_start": 116,
+            "line_end": 116,
+            "cwe": "CWE-276",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d36c923a92c7b873",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 120,
+            "line_end": 124,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "eaac52d9b8e56d3f",
+            "source": "bandit",
+            "rule_id": "B404",
+            "file": "base/app/advanced.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "af4e42db49decbfd",
+            "source": "bandit",
+            "rule_id": "B405",
+            "file": "base/app/advanced.py",
+            "line_start": 15,
+            "line_end": 15,
+            "cwe": "CWE-20",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "f74b0402deddbc9d",
+            "source": "bandit",
+            "rule_id": "B505",
+            "file": "base/app/advanced.py",
+            "line_start": 77,
+            "line_end": 77,
+            "cwe": "CWE-326",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "a46ac0940ecebfd1",
+            "source": "bandit",
+            "rule_id": "B113",
+            "file": "base/app/advanced.py",
+            "line_start": 91,
+            "line_end": 92,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "1de3912c77790487",
+            "source": "bandit",
+            "rule_id": "B306",
+            "file": "base/app/advanced.py",
+            "line_start": 106,
+            "line_end": 106,
+            "cwe": "CWE-377",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "501f47bbeb92ab73",
+            "source": "bandit",
+            "rule_id": "B314",
+            "file": "base/app/advanced.py",
+            "line_start": 123,
+            "line_end": 123,
+            "cwe": "CWE-20",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "e9ce1acb82120756",
+            "source": "bandit",
+            "rule_id": "B602",
+            "file": "base/app/advanced.py",
+            "line_start": 152,
+            "line_end": 152,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "29700e432c536da6",
+            "source": "bandit",
+            "rule_id": "B307",
+            "file": "base/app/calc.py",
+            "line_start": 12,
+            "line_end": 12,
+            "cwe": "CWE-78",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "edd6cdedf7623a1b",
+            "source": "bandit",
+            "rule_id": "B501",
+            "file": "base/app/client.py",
+            "line_start": 11,
+            "line_end": 11,
+            "cwe": "CWE-295",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "dab5d447db5011a6",
+            "source": "bandit",
+            "rule_id": "B324",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-327",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "88474aeacafa7935",
+            "source": "bandit",
+            "rule_id": "B324",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 27,
+            "line_end": 27,
+            "cwe": "CWE-327",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "a0dbf64607cc2df9",
+            "source": "bandit",
+            "rule_id": "B311",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 49,
+            "line_end": 49,
+            "cwe": "CWE-330",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "1f3cc455e2954198",
+            "source": "bandit",
+            "rule_id": "B403",
+            "file": "base/app/serialization.py",
+            "line_start": 3,
+            "line_end": 3,
+            "cwe": "CWE-502",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "fb367c2b08d3b446",
+            "source": "bandit",
+            "rule_id": "B301",
+            "file": "base/app/serialization.py",
+            "line_start": 11,
+            "line_end": 11,
+            "cwe": "CWE-502",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "9c54bd659a91d1f1",
+            "source": "bandit",
+            "rule_id": "B506",
+            "file": "base/app/serialization.py",
+            "line_start": 30,
+            "line_end": 30,
+            "cwe": "CWE-20",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "142b108c84092b2b",
+            "source": "bandit",
+            "rule_id": "B105",
+            "file": "base/app/settings_prod.py",
+            "line_start": 7,
+            "line_end": 7,
+            "cwe": "CWE-259",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "57c7d6186cf5cacc",
+            "source": "bandit",
+            "rule_id": "B105",
+            "file": "base/app/settings_prod.py",
+            "line_start": 19,
+            "line_end": 19,
+            "cwe": "CWE-259",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ac7fecb34eab230c",
+            "source": "bandit",
+            "rule_id": "B404",
+            "file": "base/app/tasks.py",
+            "line_start": 4,
+            "line_end": 4,
+            "cwe": "CWE-78",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "bc06641475c3bb76",
+            "source": "bandit",
+            "rule_id": "B605",
+            "file": "base/app/tasks.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b76c57d0529f720b",
+            "source": "bandit",
+            "rule_id": "B108",
+            "file": "base/app/tasks.py",
+            "line_start": 18,
+            "line_end": 18,
+            "cwe": "CWE-377",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "5ddb04796bd373a8",
+            "source": "bandit",
+            "rule_id": "B602",
+            "file": "base/app/tasks.py",
+            "line_start": 25,
+            "line_end": 25,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "134298f7340cd2ea",
+            "source": "bandit",
+            "rule_id": "B608",
+            "file": "base/app/views_user.py",
+            "line_start": 16,
+            "line_end": 16,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "e7dde7764beb0e3b",
+            "source": "bandit",
+            "rule_id": "B608",
+            "file": "base/app/views_user.py",
+            "line_start": 29,
+            "line_end": 29,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "c4552dc5382309f8",
+            "source": "bandit",
+            "rule_id": "B113",
+            "file": "base/app/web_flaws.py",
+            "line_start": 32,
+            "line_end": 32,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "cf99a7356bfcc5e6",
+            "source": "bandit",
+            "rule_id": "B608",
+            "file": "base/app/web_flaws.py",
+            "line_start": 48,
+            "line_end": 48,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "9dc1099ea040b893",
+            "source": "bandit",
+            "rule_id": "B103",
+            "file": "base/app/web_flaws.py",
+            "line_start": 116,
+            "line_end": 116,
+            "cwe": "CWE-732",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d519b543444ac063",
+            "source": "gitleaks",
+            "rule_id": "stripe-access-token",
+            "file": "base/app/settings_prod.py",
+            "line_start": 19,
+            "line_end": 19,
+            "cwe": "CWE-798",
+            "severity": "high",
+            "tool_version": "8.30.1"
+          },
+          "verdict": "vulnerable"
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "model": "gemini-3.5-flash-lite",
+      "records": [
+        {
+          "finding": {
+            "id": "2fcf017a3a06c6c9",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.use-defused-xml",
+            "file": "base/app/advanced.py",
+            "line_start": 15,
+            "line_end": 15,
+            "cwe": "CWE-611",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ad353704a3d00533",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.cryptography.security.insufficient-rsa-key-size",
+            "file": "base/app/advanced.py",
+            "line_start": 77,
+            "line_end": 77,
+            "cwe": "CWE-326",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "0d6d0800f84109ef",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.insecure-transport.requests.request-with-http",
+            "file": "base/app/advanced.py",
+            "line_start": 91,
+            "line_end": 92,
+            "cwe": "CWE-319",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "0cfa7eed3c70b722",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.dangerous-subprocess-use",
+            "file": "base/app/advanced.py",
+            "line_start": 152,
+            "line_end": 152,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "148ab8bd50019a68",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.subprocess-shell-true",
+            "file": "base/app/advanced.py",
+            "line_start": 152,
+            "line_end": 152,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d3b37059452d25e5",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/advanced.py",
+            "line_start": 155,
+            "line_end": 156,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "acc9fc88359103d6",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.logging.python-logger-credential-disclosure",
+            "file": "base/app/audit.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-532",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "198eb98af9123dde",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.code.user-eval",
+            "file": "base/app/calc.py",
+            "line_start": 11,
+            "line_end": 12,
+            "cwe": "CWE-95",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "3402bb4d3b417a90",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.eval-injection",
+            "file": "base/app/calc.py",
+            "line_start": 12,
+            "line_end": 12,
+            "cwe": "CWE-95",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "2bcd154641f82c1a",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.eval-detected",
+            "file": "base/app/calc.py",
+            "line_start": 12,
+            "line_end": 12,
+            "cwe": "CWE-95",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "6a157a6b27ace67a",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.requests.security.disabled-cert-validation",
+            "file": "base/app/client.py",
+            "line_start": 11,
+            "line_end": 11,
+            "cwe": "CWE-295",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "a37019a5c7ef364e",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.ssrf.ssrf-injection-requests",
+            "file": "base/app/client.py",
+            "line_start": 25,
+            "line_end": 26,
+            "cwe": "CWE-918",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ecf62fd54631e1c6",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.ssrf-requests",
+            "file": "base/app/client.py",
+            "line_start": 26,
+            "line_end": 26,
+            "cwe": "CWE-918",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "5775ebcdf32ba66b",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.insecure-hash-algorithm-md5",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-327",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "37d2248f84552c60",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.md5-used-as-password",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-327",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "eaae46033aa79488",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.insecure-hash-algorithm-sha1",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 27,
+            "line_end": 27,
+            "cwe": "CWE-327",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "6d6f475a883078bd",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.path-traversal.path-traversal-open",
+            "file": "base/app/files.py",
+            "line_start": 24,
+            "line_end": 29,
+            "cwe": "CWE-22",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "bee02ace1bcbd57b",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.raw-html-format",
+            "file": "base/app/render.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-79",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "83c314da569701e0",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.raw-html-format",
+            "file": "base/app/render.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-79",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "eb2e900b2b7a7cc9",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.audit.render-template-string",
+            "file": "base/app/render.py",
+            "line_start": 9,
+            "line_end": 9,
+            "cwe": "CWE-96",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d8c473f54ef8a13a",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.audit.render-template-string",
+            "file": "base/app/render.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-96",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "f72f056ebf1df4df",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.deserialization.avoid-pickle",
+            "file": "base/app/serialization.py",
+            "line_start": 11,
+            "line_end": 11,
+            "cwe": "CWE-502",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "3bf152fdbdba8103",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.deserialization.avoid-pickle",
+            "file": "base/app/serialization.py",
+            "line_start": 15,
+            "line_end": 15,
+            "cwe": "CWE-502",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ec4b546c2d5664f1",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.deserialization.avoid-pyyaml-load",
+            "file": "base/app/serialization.py",
+            "line_start": 30,
+            "line_end": 30,
+            "cwe": "CWE-502",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "a9f602081f7f80fd",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.command.command-injection-os-system",
+            "file": "base/app/tasks.py",
+            "line_start": 12,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "efa888bc45c972e8",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.os-system-injection",
+            "file": "base/app/tasks.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "3e92906efa1dee90",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.dangerous-system-call",
+            "file": "base/app/tasks.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "6ba90652ed790852",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.dangerous-subprocess-use",
+            "file": "base/app/tasks.py",
+            "line_start": 25,
+            "line_end": 25,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b8fa8ebd8cb471ff",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.subprocess-shell-true",
+            "file": "base/app/tasks.py",
+            "line_start": 25,
+            "line_end": 25,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b14f5cbee595b240",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.sql.sql-injection-db-cursor-execute",
+            "file": "base/app/views_user.py",
+            "line_start": 14,
+            "line_end": 17,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d863ab4b5b98cdb9",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.sqlalchemy.security.sqlalchemy-execute-raw-query",
+            "file": "base/app/views_user.py",
+            "line_start": 16,
+            "line_end": 17,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b91696c6ac2b7efe",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.tainted-sql-string",
+            "file": "base/app/views_user.py",
+            "line_start": 16,
+            "line_end": 16,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d7e82587cec6f6d5",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.tainted-sql-string",
+            "file": "base/app/views_user.py",
+            "line_start": 16,
+            "line_end": 16,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "40e640b133c9c413",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.formatted-sql-query",
+            "file": "base/app/views_user.py",
+            "line_start": 17,
+            "line_end": 17,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "780b344a9e923459",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.sqlalchemy.security.sqlalchemy-execute-raw-query",
+            "file": "base/app/views_user.py",
+            "line_start": 29,
+            "line_end": 30,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "565ddf53b5e74c45",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.tainted-sql-string",
+            "file": "base/app/views_user.py",
+            "line_start": 29,
+            "line_end": 29,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "9772d1874ad02b84",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.tainted-sql-string",
+            "file": "base/app/views_user.py",
+            "line_start": 29,
+            "line_end": 29,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ccd1e7cbed91f2d1",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 13,
+            "line_end": 16,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "a5cadfbc8a9ff49b",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 29,
+            "line_end": 32,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "86304771136d6c22",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.tainted-url-host",
+            "file": "base/app/web_flaws.py",
+            "line_start": 32,
+            "line_end": 32,
+            "cwe": "CWE-918",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "dbf0a0fbfbbb0990",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 45,
+            "line_end": 48,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "7fc6d99d69c54df5",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.sql.sql-injection-db-cursor-execute",
+            "file": "base/app/web_flaws.py",
+            "line_start": 46,
+            "line_end": 48,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "9f37e6ac5386b5b7",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.sqlalchemy.security.sqlalchemy-execute-raw-query",
+            "file": "base/app/web_flaws.py",
+            "line_start": 48,
+            "line_end": 48,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "cb554174b9254306",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.tainted-sql-string",
+            "file": "base/app/web_flaws.py",
+            "line_start": 48,
+            "line_end": 48,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b0ded321c8955347",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 95,
+            "line_end": 99,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "47604813987d0f59",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.insecure-file-permissions",
+            "file": "base/app/web_flaws.py",
+            "line_start": 116,
+            "line_end": 116,
+            "cwe": "CWE-276",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d36c923a92c7b873",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 120,
+            "line_end": 124,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "eaac52d9b8e56d3f",
+            "source": "bandit",
+            "rule_id": "B404",
+            "file": "base/app/advanced.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "af4e42db49decbfd",
+            "source": "bandit",
+            "rule_id": "B405",
+            "file": "base/app/advanced.py",
+            "line_start": 15,
+            "line_end": 15,
+            "cwe": "CWE-20",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "f74b0402deddbc9d",
+            "source": "bandit",
+            "rule_id": "B505",
+            "file": "base/app/advanced.py",
+            "line_start": 77,
+            "line_end": 77,
+            "cwe": "CWE-326",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "a46ac0940ecebfd1",
+            "source": "bandit",
+            "rule_id": "B113",
+            "file": "base/app/advanced.py",
+            "line_start": 91,
+            "line_end": 92,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "1de3912c77790487",
+            "source": "bandit",
+            "rule_id": "B306",
+            "file": "base/app/advanced.py",
+            "line_start": 106,
+            "line_end": 106,
+            "cwe": "CWE-377",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "501f47bbeb92ab73",
+            "source": "bandit",
+            "rule_id": "B314",
+            "file": "base/app/advanced.py",
+            "line_start": 123,
+            "line_end": 123,
+            "cwe": "CWE-20",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "e9ce1acb82120756",
+            "source": "bandit",
+            "rule_id": "B602",
+            "file": "base/app/advanced.py",
+            "line_start": 152,
+            "line_end": 152,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "29700e432c536da6",
+            "source": "bandit",
+            "rule_id": "B307",
+            "file": "base/app/calc.py",
+            "line_start": 12,
+            "line_end": 12,
+            "cwe": "CWE-78",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "edd6cdedf7623a1b",
+            "source": "bandit",
+            "rule_id": "B501",
+            "file": "base/app/client.py",
+            "line_start": 11,
+            "line_end": 11,
+            "cwe": "CWE-295",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "dab5d447db5011a6",
+            "source": "bandit",
+            "rule_id": "B324",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-327",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "88474aeacafa7935",
+            "source": "bandit",
+            "rule_id": "B324",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 27,
+            "line_end": 27,
+            "cwe": "CWE-327",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "a0dbf64607cc2df9",
+            "source": "bandit",
+            "rule_id": "B311",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 49,
+            "line_end": 49,
+            "cwe": "CWE-330",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "1f3cc455e2954198",
+            "source": "bandit",
+            "rule_id": "B403",
+            "file": "base/app/serialization.py",
+            "line_start": 3,
+            "line_end": 3,
+            "cwe": "CWE-502",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "fb367c2b08d3b446",
+            "source": "bandit",
+            "rule_id": "B301",
+            "file": "base/app/serialization.py",
+            "line_start": 11,
+            "line_end": 11,
+            "cwe": "CWE-502",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "9c54bd659a91d1f1",
+            "source": "bandit",
+            "rule_id": "B506",
+            "file": "base/app/serialization.py",
+            "line_start": 30,
+            "line_end": 30,
+            "cwe": "CWE-20",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "142b108c84092b2b",
+            "source": "bandit",
+            "rule_id": "B105",
+            "file": "base/app/settings_prod.py",
+            "line_start": 7,
+            "line_end": 7,
+            "cwe": "CWE-259",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "57c7d6186cf5cacc",
+            "source": "bandit",
+            "rule_id": "B105",
+            "file": "base/app/settings_prod.py",
+            "line_start": 19,
+            "line_end": 19,
+            "cwe": "CWE-259",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ac7fecb34eab230c",
+            "source": "bandit",
+            "rule_id": "B404",
+            "file": "base/app/tasks.py",
+            "line_start": 4,
+            "line_end": 4,
+            "cwe": "CWE-78",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "bc06641475c3bb76",
+            "source": "bandit",
+            "rule_id": "B605",
+            "file": "base/app/tasks.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b76c57d0529f720b",
+            "source": "bandit",
+            "rule_id": "B108",
+            "file": "base/app/tasks.py",
+            "line_start": 18,
+            "line_end": 18,
+            "cwe": "CWE-377",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "5ddb04796bd373a8",
+            "source": "bandit",
+            "rule_id": "B602",
+            "file": "base/app/tasks.py",
+            "line_start": 25,
+            "line_end": 25,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "134298f7340cd2ea",
+            "source": "bandit",
+            "rule_id": "B608",
+            "file": "base/app/views_user.py",
+            "line_start": 16,
+            "line_end": 16,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "e7dde7764beb0e3b",
+            "source": "bandit",
+            "rule_id": "B608",
+            "file": "base/app/views_user.py",
+            "line_start": 29,
+            "line_end": 29,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "c4552dc5382309f8",
+            "source": "bandit",
+            "rule_id": "B113",
+            "file": "base/app/web_flaws.py",
+            "line_start": 32,
+            "line_end": 32,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "cf99a7356bfcc5e6",
+            "source": "bandit",
+            "rule_id": "B608",
+            "file": "base/app/web_flaws.py",
+            "line_start": 48,
+            "line_end": 48,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "9dc1099ea040b893",
+            "source": "bandit",
+            "rule_id": "B103",
+            "file": "base/app/web_flaws.py",
+            "line_start": 116,
+            "line_end": 116,
+            "cwe": "CWE-732",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d519b543444ac063",
+            "source": "gitleaks",
+            "rule_id": "stripe-access-token",
+            "file": "base/app/settings_prod.py",
+            "line_start": 19,
+            "line_end": 19,
+            "cwe": "CWE-798",
+            "severity": "high",
+            "tool_version": "8.30.1"
+          },
+          "verdict": "vulnerable"
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "model": "gemini-3.5-flash-lite",
+      "records": [
+        {
+          "finding": {
+            "id": "2fcf017a3a06c6c9",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.use-defused-xml",
+            "file": "base/app/advanced.py",
+            "line_start": 15,
+            "line_end": 15,
+            "cwe": "CWE-611",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ad353704a3d00533",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.cryptography.security.insufficient-rsa-key-size",
+            "file": "base/app/advanced.py",
+            "line_start": 77,
+            "line_end": 77,
+            "cwe": "CWE-326",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "0d6d0800f84109ef",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.insecure-transport.requests.request-with-http",
+            "file": "base/app/advanced.py",
+            "line_start": 91,
+            "line_end": 92,
+            "cwe": "CWE-319",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "0cfa7eed3c70b722",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.dangerous-subprocess-use",
+            "file": "base/app/advanced.py",
+            "line_start": 152,
+            "line_end": 152,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "148ab8bd50019a68",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.subprocess-shell-true",
+            "file": "base/app/advanced.py",
+            "line_start": 152,
+            "line_end": 152,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d3b37059452d25e5",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/advanced.py",
+            "line_start": 155,
+            "line_end": 156,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "acc9fc88359103d6",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.logging.python-logger-credential-disclosure",
+            "file": "base/app/audit.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-532",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "198eb98af9123dde",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.code.user-eval",
+            "file": "base/app/calc.py",
+            "line_start": 11,
+            "line_end": 12,
+            "cwe": "CWE-95",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "3402bb4d3b417a90",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.eval-injection",
+            "file": "base/app/calc.py",
+            "line_start": 12,
+            "line_end": 12,
+            "cwe": "CWE-95",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "2bcd154641f82c1a",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.eval-detected",
+            "file": "base/app/calc.py",
+            "line_start": 12,
+            "line_end": 12,
+            "cwe": "CWE-95",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "6a157a6b27ace67a",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.requests.security.disabled-cert-validation",
+            "file": "base/app/client.py",
+            "line_start": 11,
+            "line_end": 11,
+            "cwe": "CWE-295",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "a37019a5c7ef364e",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.ssrf.ssrf-injection-requests",
+            "file": "base/app/client.py",
+            "line_start": 25,
+            "line_end": 26,
+            "cwe": "CWE-918",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ecf62fd54631e1c6",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.ssrf-requests",
+            "file": "base/app/client.py",
+            "line_start": 26,
+            "line_end": 26,
+            "cwe": "CWE-918",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "5775ebcdf32ba66b",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.insecure-hash-algorithm-md5",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-327",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "37d2248f84552c60",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.md5-used-as-password",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-327",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "eaae46033aa79488",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.insecure-hash-algorithm-sha1",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 27,
+            "line_end": 27,
+            "cwe": "CWE-327",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "6d6f475a883078bd",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.path-traversal.path-traversal-open",
+            "file": "base/app/files.py",
+            "line_start": 24,
+            "line_end": 29,
+            "cwe": "CWE-22",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "bee02ace1bcbd57b",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.raw-html-format",
+            "file": "base/app/render.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-79",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "83c314da569701e0",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.raw-html-format",
+            "file": "base/app/render.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-79",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "eb2e900b2b7a7cc9",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.audit.render-template-string",
+            "file": "base/app/render.py",
+            "line_start": 9,
+            "line_end": 9,
+            "cwe": "CWE-96",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d8c473f54ef8a13a",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.audit.render-template-string",
+            "file": "base/app/render.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-96",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "f72f056ebf1df4df",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.deserialization.avoid-pickle",
+            "file": "base/app/serialization.py",
+            "line_start": 11,
+            "line_end": 11,
+            "cwe": "CWE-502",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "3bf152fdbdba8103",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.deserialization.avoid-pickle",
+            "file": "base/app/serialization.py",
+            "line_start": 15,
+            "line_end": 15,
+            "cwe": "CWE-502",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ec4b546c2d5664f1",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.deserialization.avoid-pyyaml-load",
+            "file": "base/app/serialization.py",
+            "line_start": 30,
+            "line_end": 30,
+            "cwe": "CWE-502",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "a9f602081f7f80fd",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.command.command-injection-os-system",
+            "file": "base/app/tasks.py",
+            "line_start": 12,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "efa888bc45c972e8",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.os-system-injection",
+            "file": "base/app/tasks.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "3e92906efa1dee90",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.dangerous-system-call",
+            "file": "base/app/tasks.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "6ba90652ed790852",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.dangerous-subprocess-use",
+            "file": "base/app/tasks.py",
+            "line_start": 25,
+            "line_end": 25,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b8fa8ebd8cb471ff",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.subprocess-shell-true",
+            "file": "base/app/tasks.py",
+            "line_start": 25,
+            "line_end": 25,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b14f5cbee595b240",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.sql.sql-injection-db-cursor-execute",
+            "file": "base/app/views_user.py",
+            "line_start": 14,
+            "line_end": 17,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d863ab4b5b98cdb9",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.sqlalchemy.security.sqlalchemy-execute-raw-query",
+            "file": "base/app/views_user.py",
+            "line_start": 16,
+            "line_end": 17,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b91696c6ac2b7efe",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.tainted-sql-string",
+            "file": "base/app/views_user.py",
+            "line_start": 16,
+            "line_end": 16,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d7e82587cec6f6d5",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.tainted-sql-string",
+            "file": "base/app/views_user.py",
+            "line_start": 16,
+            "line_end": 16,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "40e640b133c9c413",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.formatted-sql-query",
+            "file": "base/app/views_user.py",
+            "line_start": 17,
+            "line_end": 17,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "780b344a9e923459",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.sqlalchemy.security.sqlalchemy-execute-raw-query",
+            "file": "base/app/views_user.py",
+            "line_start": 29,
+            "line_end": 30,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "565ddf53b5e74c45",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.tainted-sql-string",
+            "file": "base/app/views_user.py",
+            "line_start": 29,
+            "line_end": 29,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "9772d1874ad02b84",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.flask.security.injection.tainted-sql-string",
+            "file": "base/app/views_user.py",
+            "line_start": 29,
+            "line_end": 29,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ccd1e7cbed91f2d1",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 13,
+            "line_end": 16,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "a5cadfbc8a9ff49b",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 29,
+            "line_end": 32,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "86304771136d6c22",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.tainted-url-host",
+            "file": "base/app/web_flaws.py",
+            "line_start": 32,
+            "line_end": 32,
+            "cwe": "CWE-918",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "dbf0a0fbfbbb0990",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 45,
+            "line_end": 48,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "7fc6d99d69c54df5",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.sql.sql-injection-db-cursor-execute",
+            "file": "base/app/web_flaws.py",
+            "line_start": 46,
+            "line_end": 48,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "9f37e6ac5386b5b7",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.sqlalchemy.security.sqlalchemy-execute-raw-query",
+            "file": "base/app/web_flaws.py",
+            "line_start": 48,
+            "line_end": 48,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "cb554174b9254306",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.injection.tainted-sql-string",
+            "file": "base/app/web_flaws.py",
+            "line_start": 48,
+            "line_end": 48,
+            "cwe": "CWE-89",
+            "severity": "high",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b0ded321c8955347",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 95,
+            "line_end": 99,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "47604813987d0f59",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.lang.security.audit.insecure-file-permissions",
+            "file": "base/app/web_flaws.py",
+            "line_start": 116,
+            "line_end": 116,
+            "cwe": "CWE-276",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d36c923a92c7b873",
+            "source": "semgrep",
+            "rule_id": "opt.rules.python.django.security.audit.django-ratelimit.missing-ratelimit",
+            "file": "base/app/web_flaws.py",
+            "line_start": 120,
+            "line_end": 124,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.181.0"
+          },
+          "verdict": "false_positive"
+        },
+        {
+          "finding": {
+            "id": "eaac52d9b8e56d3f",
+            "source": "bandit",
+            "rule_id": "B404",
+            "file": "base/app/advanced.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "uncertain"
+        },
+        {
+          "finding": {
+            "id": "af4e42db49decbfd",
+            "source": "bandit",
+            "rule_id": "B405",
+            "file": "base/app/advanced.py",
+            "line_start": 15,
+            "line_end": 15,
+            "cwe": "CWE-20",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "f74b0402deddbc9d",
+            "source": "bandit",
+            "rule_id": "B505",
+            "file": "base/app/advanced.py",
+            "line_start": 77,
+            "line_end": 77,
+            "cwe": "CWE-326",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "a46ac0940ecebfd1",
+            "source": "bandit",
+            "rule_id": "B113",
+            "file": "base/app/advanced.py",
+            "line_start": 91,
+            "line_end": 92,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "1de3912c77790487",
+            "source": "bandit",
+            "rule_id": "B306",
+            "file": "base/app/advanced.py",
+            "line_start": 106,
+            "line_end": 106,
+            "cwe": "CWE-377",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "501f47bbeb92ab73",
+            "source": "bandit",
+            "rule_id": "B314",
+            "file": "base/app/advanced.py",
+            "line_start": 123,
+            "line_end": 123,
+            "cwe": "CWE-20",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "e9ce1acb82120756",
+            "source": "bandit",
+            "rule_id": "B602",
+            "file": "base/app/advanced.py",
+            "line_start": 152,
+            "line_end": 152,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "29700e432c536da6",
+            "source": "bandit",
+            "rule_id": "B307",
+            "file": "base/app/calc.py",
+            "line_start": 12,
+            "line_end": 12,
+            "cwe": "CWE-78",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "edd6cdedf7623a1b",
+            "source": "bandit",
+            "rule_id": "B501",
+            "file": "base/app/client.py",
+            "line_start": 11,
+            "line_end": 11,
+            "cwe": "CWE-295",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "dab5d447db5011a6",
+            "source": "bandit",
+            "rule_id": "B324",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 8,
+            "line_end": 8,
+            "cwe": "CWE-327",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "88474aeacafa7935",
+            "source": "bandit",
+            "rule_id": "B324",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 27,
+            "line_end": 27,
+            "cwe": "CWE-327",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "a0dbf64607cc2df9",
+            "source": "bandit",
+            "rule_id": "B311",
+            "file": "base/app/crypto_utils.py",
+            "line_start": 49,
+            "line_end": 49,
+            "cwe": "CWE-330",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "uncertain"
+        },
+        {
+          "finding": {
+            "id": "1f3cc455e2954198",
+            "source": "bandit",
+            "rule_id": "B403",
+            "file": "base/app/serialization.py",
+            "line_start": 3,
+            "line_end": 3,
+            "cwe": "CWE-502",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "uncertain"
+        },
+        {
+          "finding": {
+            "id": "fb367c2b08d3b446",
+            "source": "bandit",
+            "rule_id": "B301",
+            "file": "base/app/serialization.py",
+            "line_start": 11,
+            "line_end": 11,
+            "cwe": "CWE-502",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "9c54bd659a91d1f1",
+            "source": "bandit",
+            "rule_id": "B506",
+            "file": "base/app/serialization.py",
+            "line_start": 30,
+            "line_end": 30,
+            "cwe": "CWE-20",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "142b108c84092b2b",
+            "source": "bandit",
+            "rule_id": "B105",
+            "file": "base/app/settings_prod.py",
+            "line_start": 7,
+            "line_end": 7,
+            "cwe": "CWE-259",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "57c7d6186cf5cacc",
+            "source": "bandit",
+            "rule_id": "B105",
+            "file": "base/app/settings_prod.py",
+            "line_start": 19,
+            "line_end": 19,
+            "cwe": "CWE-259",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "ac7fecb34eab230c",
+            "source": "bandit",
+            "rule_id": "B404",
+            "file": "base/app/tasks.py",
+            "line_start": 4,
+            "line_end": 4,
+            "cwe": "CWE-78",
+            "severity": "low",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "uncertain"
+        },
+        {
+          "finding": {
+            "id": "bc06641475c3bb76",
+            "source": "bandit",
+            "rule_id": "B605",
+            "file": "base/app/tasks.py",
+            "line_start": 13,
+            "line_end": 13,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "b76c57d0529f720b",
+            "source": "bandit",
+            "rule_id": "B108",
+            "file": "base/app/tasks.py",
+            "line_start": 18,
+            "line_end": 18,
+            "cwe": "CWE-377",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "uncertain"
+        },
+        {
+          "finding": {
+            "id": "5ddb04796bd373a8",
+            "source": "bandit",
+            "rule_id": "B602",
+            "file": "base/app/tasks.py",
+            "line_start": 25,
+            "line_end": 25,
+            "cwe": "CWE-78",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "134298f7340cd2ea",
+            "source": "bandit",
+            "rule_id": "B608",
+            "file": "base/app/views_user.py",
+            "line_start": 16,
+            "line_end": 16,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "e7dde7764beb0e3b",
+            "source": "bandit",
+            "rule_id": "B608",
+            "file": "base/app/views_user.py",
+            "line_start": 29,
+            "line_end": 29,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "c4552dc5382309f8",
+            "source": "bandit",
+            "rule_id": "B113",
+            "file": "base/app/web_flaws.py",
+            "line_start": 32,
+            "line_end": 32,
+            "cwe": "CWE-400",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "cf99a7356bfcc5e6",
+            "source": "bandit",
+            "rule_id": "B608",
+            "file": "base/app/web_flaws.py",
+            "line_start": 48,
+            "line_end": 48,
+            "cwe": "CWE-89",
+            "severity": "medium",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "9dc1099ea040b893",
+            "source": "bandit",
+            "rule_id": "B103",
+            "file": "base/app/web_flaws.py",
+            "line_start": 116,
+            "line_end": 116,
+            "cwe": "CWE-732",
+            "severity": "high",
+            "tool_version": "1.9.4"
+          },
+          "verdict": "vulnerable"
+        },
+        {
+          "finding": {
+            "id": "d519b543444ac063",
+            "source": "gitleaks",
+            "rule_id": "stripe-access-token",
+            "file": "base/app/settings_prod.py",
+            "line_start": 19,
+            "line_end": 19,
+            "cwe": "CWE-798",
+            "severity": "high",
+            "tool_version": "8.30.1"
+          },
+          "verdict": "vulnerable"
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "ts": "2026-10-31T20:26:44Z",
+      "model": "gemini-3.5-flash-lite",
+      "usage": {
+        "input": 11197,
+        "output": 3901,
+        "thoughts": 0,
+        "total": 15098
+      },
+      "latency_sec": 16.77,
+      "attempts": 1,
+      "finish_reason": "STOP"
+    },
+    {
+      "ts": "2026-10-31T20:27:36Z",
+      "model": "gemini-3.5-flash-lite",
+      "usage": {
+        "input": 11197,
+        "output": 3895,
+        "thoughts": 0,
+        "total": 15092
+      },
+      "latency_sec": 16.65,
+      "attempts": 1,
+      "finish_reason": "STOP"
+    },
+    {
+      "ts": "2026-10-31T20:28:31Z",
+      "model": "gemini-3.5-flash-lite",
+      "usage": {
+        "input": 11197,
+        "output": 3975,
+        "thoughts": 0,
+        "total": 15172
+      },
+      "latency_sec": 16.67,
+      "attempts": 1,
+      "finish_reason": "STOP"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "source": "VKR-ANTEI",
+  "files_sha256": {
+    "benchmark/seeding/ground_truth_multi.json": "b31f2a39b8084d1f20f9bf8a7f11affedf3348c8d28003aa386d4ee134b10dd0",
+    "docs/evidence/config-common-python/2-tools-plus-llm-r1.json": "23140070ccff0bc2fe4cfb41a87a79835e89fe07e5199ca0bbe6cf0dadf587ac",
+    "docs/evidence/config-common-python/2-tools-plus-llm-r2.json": "79d67d8a8fcdf005ac6564078b1e631506ac1bffd789a2a8fafc76f87d421ecb",
+    "docs/evidence/config-common-python/2-tools-plus-llm-r3.json": "af85bee84068cb638b9a3773878a85a5da600c008b3cf966fea979afedaf01ed",
+    "docs/evidence/config-common-python/llm-calls.jsonl": "272a84e56e3247a9d75c99827ed8a1fd3c8cb5d66ab1e04ce4567a50f889c9b7"
+  },
+  "export": "allowlisted fields; no source code, explanations, credentials or API endpoints"
+}
