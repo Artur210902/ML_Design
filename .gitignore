@@ -26,3 +26,11 @@ data/
 *.sqlite
 *.db
 *.log
+
+# Публичный обезличенный снимок эксперимента ДЗ3
+!data/
+data/*
+!data/hw3/
+data/hw3/*
+!data/hw3/experiment.json
+!data/hw3/provenance.json
